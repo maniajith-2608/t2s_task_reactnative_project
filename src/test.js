@@ -79,7 +79,6 @@ export class test extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return{
     postData: state.postData,
     filteredArray: state.filteredArray,
