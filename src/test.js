@@ -24,8 +24,6 @@ export class test extends Component {
   }
 
   render() {
-   
-    let data=[{id:1},{id:2}]
     return (
 <View style = { styles.MainContainer }>
       <View style={{height: 60, backgroundColor: 'white', borderBottomWidth:0.5, borderBottomColor: '#999999'}}>  
