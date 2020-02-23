@@ -14,7 +14,7 @@ export default (state = initialState, action) => {
 
     case types.POST_SUCCESS:
         
-        return { ...state, postData:[...state.postData,...action.data],loading:false,page:state.page+15 }
+        return { ...state, postData:action.data,loading:false,page:15 }
         case types.POST_MORE_SUCCESS:
                
                 return { ...state, postData:[...state.postData,...action.data],loading:false ,page:state.page+15}
@@ -22,9 +22,6 @@ export default (state = initialState, action) => {
                 
                 return { ...state,loading:action.data }
         case types.SEARCH_TITLE:
-            
-            let data=state.postData.filter(item=>item.title.indexOf(action.searchText)!==-1);
-            
             return {
                 ...state,
                 filteredArray: state.postData.filter((item) => item.title.indexOf(action.searchText.toLowerCase()) > -1)
