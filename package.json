@@ -12,7 +12,7 @@
     "update-ios": "react-native bundle --entry-file index.js --bundle-output ./ios/DemoReact/main.jsbundle --dev false --platform ios --assets-dest ./ios"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-gesture-handler": "^1.6.0",
